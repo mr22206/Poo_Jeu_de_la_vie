@@ -11,18 +11,22 @@
       
       
       
+        <link rel="prev" href="../components/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../../diagrammes/classes/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
     
     
       
-        <title>Jeu de la Vie</title>
+        <title>Patterns - Jeu de la Vie</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
       
 
@@ -41,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#patterns-de-conception" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -69,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="/." title="Jeu de la Vie" class="md-header__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
+    <a href="../../.." title="Jeu de la Vie" class="md-header__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Patterns
             
           </span>
         </div>
@@ -160,7 +169,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/." class="md-tabs__link">
+        <a href="../../.." class="md-tabs__link">
           
   
   Accueil
@@ -184,7 +193,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/guide_utilisateur/installation/prerequisites/" class="md-tabs__link">
+        <a href="../../../guide_utilisateur/installation/prerequisites/" class="md-tabs__link">
           
   
   Guide Utilisateur
@@ -201,17 +210,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/technique/architecture/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   Documentation Technique
@@ -238,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/developpement/contribution/guide/" class="md-tabs__link">
+        <a href="../../../developpement/contribution/guide/" class="md-tabs__link">
           
   
   Guide Développeur
@@ -259,7 +272,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/tests/unitaires/" class="md-tabs__link">
+        <a href="../../../tests/unitaires/" class="md-tabs__link">
           
   
   Tests
@@ -277,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/support/faq/" class="md-tabs__link">
+        <a href="../../../support/faq/" class="md-tabs__link">
           
   
   FAQ & Support
@@ -310,7 +323,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Jeu de la Vie" class="md-nav__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
+    <a href="../../.." title="Jeu de la Vie" class="md-nav__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -370,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -391,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/quickstart/" class="md-nav__link">
+      <a href="../../../quickstart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -412,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/changelog/" class="md-nav__link">
+      <a href="../../../changelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -524,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/installation/prerequisites/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/installation/prerequisites/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -545,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/installation/setup/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/installation/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -566,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/installation/configuration/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/installation/configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -637,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/utilisation/interface/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/utilisation/interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -658,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/utilisation/commands/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/utilisation/commands/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -679,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/utilisation/patterns/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/utilisation/patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -750,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/modes/console/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/modes/console/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -771,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/modes/graphique/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/modes/graphique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -792,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/modes/debug/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/modes/debug/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -825,27 +838,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -856,7 +872,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Documentation Technique
@@ -867,27 +883,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -898,7 +917,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             Architecture
@@ -912,7 +931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/architecture/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -933,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/architecture/components/" class="md-nav__link">
+      <a href="../components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -951,10 +970,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/technique/architecture/patterns/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Patterns
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -963,6 +1002,134 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-structurels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns structurels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Patterns structurels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#observer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state" class="md-nav__link">
+    <span class="md-ellipsis">
+      State
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-creationnels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns créationnels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Patterns créationnels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#factory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#singleton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Singleton
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-comportementaux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns comportementaux
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Patterns comportementaux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iterator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -988,10 +1155,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1000,7 +1170,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1025,7 +1195,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/diagrammes/classes/" class="md-nav__link">
+      <a href="../../diagrammes/classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1046,7 +1216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/diagrammes/sequences/" class="md-nav__link">
+      <a href="../../diagrammes/sequences/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1067,7 +1237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/diagrammes/states/" class="md-nav__link">
+      <a href="../../diagrammes/states/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1101,10 +1271,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1113,7 +1286,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1138,7 +1311,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/api/core/" class="md-nav__link">
+      <a href="../../api/core/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1159,7 +1332,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/api/renderer/" class="md-nav__link">
+      <a href="../../api/renderer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1180,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/api/utils/" class="md-nav__link">
+      <a href="../../api/utils/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1300,7 +1473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/contribution/guide/" class="md-nav__link">
+      <a href="../../../developpement/contribution/guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1321,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/contribution/workflow/" class="md-nav__link">
+      <a href="../../../developpement/contribution/workflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1342,7 +1515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/contribution/standards/" class="md-nav__link">
+      <a href="../../../developpement/contribution/standards/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1413,7 +1586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/outils/scripts/" class="md-nav__link">
+      <a href="../../../developpement/outils/scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1434,7 +1607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/outils/tests/" class="md-nav__link">
+      <a href="../../../developpement/outils/tests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1455,7 +1628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/outils/cicd/" class="md-nav__link">
+      <a href="../../../developpement/outils/cicd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1533,7 +1706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tests/unitaires/" class="md-nav__link">
+      <a href="../../../tests/unitaires/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1554,7 +1727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tests/integration/" class="md-nav__link">
+      <a href="../../../tests/integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1575,7 +1748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tests/benchmarks/" class="md-nav__link">
+      <a href="../../../tests/benchmarks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1645,7 +1818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/support/faq/" class="md-nav__link">
+      <a href="../../../support/faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1666,7 +1839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/support/troubleshooting/" class="md-nav__link">
+      <a href="../../../support/troubleshooting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1687,7 +1860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/support/contact/" class="md-nav__link">
+      <a href="../../../support/contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1725,6 +1898,124 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-structurels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns structurels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Patterns structurels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#observer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state" class="md-nav__link">
+    <span class="md-ellipsis">
+      State
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-creationnels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns créationnels
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Patterns créationnels">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#factory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#singleton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Singleton
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patterns-comportementaux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patterns comportementaux
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Patterns comportementaux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iterator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1736,8 +2027,118 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="patterns-de-conception">Patterns de conception<a class="headerlink" href="#patterns-de-conception" title="Permanent link">&para;</a></h1>
+<h2 id="patterns-structurels">Patterns structurels<a class="headerlink" href="#patterns-structurels" title="Permanent link">&para;</a></h2>
+<h3 id="observer">Observer<a class="headerlink" href="#observer" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Subject</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Grid</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Subject</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">notifyObservers</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="n">observer</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">observers</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">observer</span><span class="o">-&gt;</span><span class="n">update</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="c1">// Observer</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">IRenderer</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Observer</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">update</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<h3 id="strategy">Strategy<a class="headerlink" href="#strategy" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Interface</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">IEvolutionStrategy</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">evolve</span><span class="p">(</span><span class="n">Cell</span><span class="o">&amp;</span><span class="w"> </span><span class="n">cell</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">neighbors</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="c1">// Implémentations</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ClassicEvolution</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">IEvolutionStrategy</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">evolve</span><span class="p">(</span><span class="n">Cell</span><span class="o">&amp;</span><span class="w"> </span><span class="n">cell</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">neighbors</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<h3 id="state">State<a class="headerlink" href="#state" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">GameState</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">update</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">handle</span><span class="p">(</span><span class="n">Event</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">PlayState</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">GameState</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">update</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">handle</span><span class="p">(</span><span class="n">Event</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<h2 id="patterns-creationnels">Patterns créationnels<a class="headerlink" href="#patterns-creationnels" title="Permanent link">&para;</a></h2>
+<h3 id="factory">Factory<a class="headerlink" href="#factory" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">RendererFactory</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">IRenderer</span><span class="o">&gt;</span><span class="w"> </span><span class="n">createRenderer</span><span class="p">(</span><span class="n">RendererType</span><span class="w"> </span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">switch</span><span class="p">(</span><span class="n">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">RendererType</span><span class="o">::</span><span class="no">Console</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">make_unique</span><span class="o">&lt;</span><span class="n">ConsoleRenderer</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">            </span><span class="k">case</span><span class="w"> </span><span class="no">RendererType</span><span class="o">::</span><span class="no">Graphic</span><span class="p">:</span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">make_unique</span><span class="o">&lt;</span><span class="n">GraphicRenderer</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>
+<h3 id="singleton">Singleton<a class="headerlink" href="#singleton" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ConfigManager</span><span class="w"> </span><span class="p">{</span>
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">ConfigManager</span><span class="o">*</span><span class="w"> </span><span class="n">instance</span><span class="p">;</span>
+<span class="w">    </span><span class="n">ConfigManager</span><span class="p">()</span><span class="w"> </span><span class="p">{}</span>
+
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">ConfigManager</span><span class="o">*</span><span class="w"> </span><span class="n">getInstance</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">instance</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">ConfigManager</span><span class="p">();</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">instance</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+</code></pre></div>
+<h2 id="patterns-comportementaux">Patterns comportementaux<a class="headerlink" href="#patterns-comportementaux" title="Permanent link">&para;</a></h2>
+<h3 id="command">Command<a class="headerlink" href="#command" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Command</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">execute</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">undo</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ToggleCellCommand</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Command</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Grid</span><span class="o">&amp;</span><span class="w"> </span><span class="n">grid</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">execute</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">undo</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<h3 id="iterator">Iterator<a class="headerlink" href="#iterator" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">GridIterator</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Grid</span><span class="o">&amp;</span><span class="w"> </span><span class="n">grid</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">current</span><span class="p">;</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">Cell</span><span class="o">&amp;</span><span class="w"> </span><span class="n">next</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">hasNext</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">reset</span><span class="p">();</span>
+<span class="p">};</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1771,10 +2172,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.expand"], "search": "/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>

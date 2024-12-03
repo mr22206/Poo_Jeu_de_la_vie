@@ -6,10 +6,12 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Documentation complète du Jeu de la Vie">
       
       
       
-        <link rel="prev" href="../../technique/api/">
+      
+        <link rel="prev" href="../../developpement/outils/cicd/">
       
       
         <link rel="next" href="../integration/">
@@ -164,16 +166,17 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
   
   Accueil
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -183,8 +186,14 @@
   
     
     
+      
+  
+  
+  
+    
+    
       <li class="md-tabs__item">
-        <a href="../../guide_utilisateur/installation/" class="md-tabs__link">
+        <a href="../../guide_utilisateur/installation/prerequisites/" class="md-tabs__link">
           
   
   Guide Utilisateur
@@ -194,6 +203,9 @@
     
   
 
+    
+  
+
       
         
   
@@ -201,14 +213,50 @@
   
     
     
+      
+  
+  
+  
+    
+    
       <li class="md-tabs__item">
-        <a href="../../technique/architecture/" class="md-tabs__link">
+        <a href="../../technique/architecture/overview/" class="md-tabs__link">
           
   
   Documentation Technique
 
         </a>
       </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../developpement/contribution/guide/" class="md-tabs__link">
+          
+  
+  Guide Développeur
+
+        </a>
+      </li>
+    
+  
+
     
   
 
@@ -226,6 +274,24 @@
           
   
   Tests
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../support/faq/" class="md-tabs__link">
+          
+  
+  FAQ & Support
 
         </a>
       </li>
@@ -253,9 +319,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="Jeu de la Vie" class="md-nav__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
       
@@ -267,26 +331,6 @@
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Accueil
-  </span>
-  
-
-      </a>
-    </li>
-  
-
     
       
       
@@ -307,24 +351,26 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    Guide Utilisateur
+    Accueil
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            Guide Utilisateur
+            Accueil
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -335,11 +381,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guide_utilisateur/installation/" class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Installation
+    Présentation
   </span>
   
 
@@ -356,11 +402,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guide_utilisateur/utilisation/" class="md-nav__link">
+      <a href="../../quickstart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Utilisation
+    Démarrage rapide
   </span>
   
 
@@ -377,11 +423,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../guide_utilisateur/modes/" class="md-nav__link">
+      <a href="../../changelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Modes de jeu
+    Changelog
   </span>
   
 
@@ -417,7 +463,397 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guide Utilisateur
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Guide Utilisateur
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide_utilisateur/installation/prerequisites/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prérequis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide_utilisateur/installation/setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide_utilisateur/installation/configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utilisation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Utilisation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide_utilisateur/utilisation/interface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide_utilisateur/utilisation/commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Commandes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide_utilisateur/utilisation/patterns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Motifs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Modes de jeu
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Modes de jeu
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide_utilisateur/modes/console/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mode Console
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide_utilisateur/modes/graphique/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mode Graphique
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide_utilisateur/modes/debug/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mode Debug
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -444,15 +880,57 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../technique/architecture/" class="md-nav__link">
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Architecture
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Architecture
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique/architecture/overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vue d'ensemble
+  </span>
+  
+
       </a>
     </li>
   
@@ -466,14 +944,106 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique/diagrammes/" class="md-nav__link">
+      <a href="../../technique/architecture/components/" class="md-nav__link">
         
+  
+  <span class="md-ellipsis">
+    Composants
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique/architecture/patterns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Patterns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     Diagrammes
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Diagrammes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique/diagrammes/classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes
+  </span>
+  
+
       </a>
     </li>
   
@@ -487,15 +1057,432 @@
   
   
     <li class="md-nav__item">
-      <a href="../../technique/api/" class="md-nav__link">
+      <a href="../../technique/diagrammes/sequences/" class="md-nav__link">
         
+  
+  <span class="md-ellipsis">
+    Séquences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique/diagrammes/states/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    États
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     API
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique/api/core/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Core
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique/api/renderer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Renderer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique/api/utils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Utils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Guide Développeur
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Guide Développeur
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contribution
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Contribution
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developpement/contribution/guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developpement/contribution/workflow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developpement/contribution/standards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Standards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Outils
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Outils
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developpement/outils/scripts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Scripts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developpement/outils/tests/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tests
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developpement/outils/cicd/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CI/CD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -532,10 +1519,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -546,8 +1533,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Tests
           </label>
@@ -606,11 +1593,68 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#vue-densemble" class="md-nav__link">
+  <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Vue d'ensemble
+      Configuration
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prérequis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-des-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure des tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemples-de-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemples de tests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemples de tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-de-la-classe-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test de la classe Grid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-des-regles-devolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test des règles d'évolution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -621,31 +1665,22 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tests-par-composant" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tests par composant
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Tests par composant">
+    <nav class="md-nav" aria-label="Exécution des tests">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#grid" class="md-nav__link">
+  <a href="#compilation-et-lancement" class="md-nav__link">
     <span class="md-ellipsis">
-      Grid
+      Compilation et lancement
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#exemple-de-test" class="md-nav__link">
+  <a href="#options-de-test" class="md-nav__link">
     <span class="md-ellipsis">
-      Exemple de test
+      Options de test
     </span>
   </a>
   
@@ -663,32 +1698,71 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#validation-des-patterns" class="md-nav__link">
+    <nav class="md-nav" aria-label="Couverture de code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generation-des-rapports" class="md-nav__link">
     <span class="md-ellipsis">
-      Validation des patterns
+      Génération des rapports
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tests-de-performance" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#analyse-des-resultats" class="md-nav__link">
     <span class="md-ellipsis">
-      Tests de performance
+      Analyse des résultats
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#integration-continue" class="md-nav__link">
+  <a href="#bonnes-pratiques" class="md-nav__link">
     <span class="md-ellipsis">
-      Intégration continue
+      Bonnes pratiques
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Bonnes pratiques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organisation-des-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organisation des tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nommage-des-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nommage des tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maintenance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -722,6 +1796,139 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../benchmarks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Benchmarks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    FAQ & Support
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            FAQ & Support
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../support/contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -736,6 +1943,206 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prérequis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-des-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure des tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemples-de-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemples de tests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exemples de tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-de-la-classe-grid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test de la classe Grid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test-des-regles-devolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test des règles d'évolution
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execution-des-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exécution des tests
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Exécution des tests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compilation-et-lancement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compilation et lancement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#options-de-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options de test
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#couverture-de-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Couverture de code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Couverture de code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generation-des-rapports" class="md-nav__link">
+    <span class="md-ellipsis">
+      Génération des rapports
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analyse-des-resultats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyse des résultats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonnes-pratiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bonnes pratiques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Bonnes pratiques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#organisation-des-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organisation des tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nommage-des-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nommage des tests
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maintenance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -744,48 +2151,146 @@
                   
 
 
-<h1 id="tests-unitaires">Tests Unitaires</h1>
-<h2 id="vue-densemble">Vue d'ensemble</h2>
-<p>Notre suite de tests unitaires utilise le framework Catch2 pour C++. Les tests couvrent les composants principaux du système.</p>
-<h2 id="execution-des-tests">Exécution des tests</h2>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>build
-ctest<span class="w"> </span>--output-on-failure
+<h1 id="tests-unitaires">Tests Unitaires<a class="headerlink" href="#tests-unitaires" title="Permanent link">&para;</a></h1>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<h3 id="prerequis">Prérequis<a class="headerlink" href="#prerequis" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Framework de test : Catch2</li>
+<li>CMake avec option <code>BUILD_TESTS=ON</code></li>
+<li>Couverture de code : gcov/lcov</li>
+</ul>
+<h3 id="structure-des-tests">Structure des tests<a class="headerlink" href="#structure-des-tests" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>tests/
+├── unit/
+│   ├── core/
+│   │   ├── test_grid.cpp
+│   │   ├── test_cell.cpp
+│   │   └── test_game.cpp
+│   ├── renderer/
+│   │   ├── test_console_renderer.cpp
+│   │   └── test_graphic_renderer.cpp
+│   └── utils/
+│       ├── test_config.cpp
+│       └── test_pattern.cpp
+└── CMakeLists.txt
 </code></pre></div>
-<h2 id="tests-par-composant">Tests par composant</h2>
-<h3 id="grid">Grid</h3>
+<h2 id="exemples-de-tests">Exemples de tests<a class="headerlink" href="#exemples-de-tests" title="Permanent link">&para;</a></h2>
+<h3 id="test-de-la-classe-grid">Test de la classe Grid<a class="headerlink" href="#test-de-la-classe-grid" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">TEST_CASE</span><span class="p">(</span><span class="s">&quot;Grid initialization and basic operations&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;[grid]&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">SECTION</span><span class="p">(</span><span class="s">&quot;Grid creation&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Grid</span><span class="w"> </span><span class="nf">grid</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="w">        </span><span class="n">REQUIRE</span><span class="p">(</span><span class="n">grid</span><span class="p">.</span><span class="n">getWidth</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="w">        </span><span class="n">REQUIRE</span><span class="p">(</span><span class="n">grid</span><span class="p">.</span><span class="n">getHeight</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="w">        </span><span class="n">REQUIRE</span><span class="p">(</span><span class="n">grid</span><span class="p">.</span><span class="n">getPopulation</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">SECTION</span><span class="p">(</span><span class="s">&quot;Cell state manipulation&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Grid</span><span class="w"> </span><span class="nf">grid</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="w">        </span><span class="n">grid</span><span class="p">.</span><span class="n">setCellState</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="n">REQUIRE</span><span class="p">(</span><span class="n">grid</span><span class="p">.</span><span class="n">getCellState</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="n">REQUIRE</span><span class="p">(</span><span class="n">grid</span><span class="p">.</span><span class="n">getPopulation</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">SECTION</span><span class="p">(</span><span class="s">&quot;Grid evolution&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Grid</span><span class="w"> </span><span class="nf">grid</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Setup glider pattern</span>
+<span class="w">        </span><span class="n">grid</span><span class="p">.</span><span class="n">setCellState</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="n">grid</span><span class="p">.</span><span class="n">setCellState</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="n">grid</span><span class="p">.</span><span class="n">setCellState</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="n">grid</span><span class="p">.</span><span class="n">setCellState</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="n">grid</span><span class="p">.</span><span class="n">setCellState</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+
+<span class="w">        </span><span class="n">grid</span><span class="p">.</span><span class="n">update</span><span class="p">();</span>
+<span class="w">        </span><span class="n">REQUIRE</span><span class="p">(</span><span class="n">grid</span><span class="p">.</span><span class="n">getPopulation</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">5</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="test-des-regles-devolution">Test des règles d'évolution<a class="headerlink" href="#test-des-regles-devolution" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">TEST_CASE</span><span class="p">(</span><span class="s">&quot;Cell evolution rules&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;[cell]&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">SECTION</span><span class="p">(</span><span class="s">&quot;Underpopulation&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Cell</span><span class="w"> </span><span class="nf">cell</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="n">REQUIRE</span><span class="p">(</span><span class="n">cell</span><span class="p">.</span><span class="n">evolve</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">SECTION</span><span class="p">(</span><span class="s">&quot;Survival&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Cell</span><span class="w"> </span><span class="nf">cell</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="n">REQUIRE</span><span class="p">(</span><span class="n">cell</span><span class="p">.</span><span class="n">evolve</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="n">REQUIRE</span><span class="p">(</span><span class="n">cell</span><span class="p">.</span><span class="n">evolve</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">SECTION</span><span class="p">(</span><span class="s">&quot;Overpopulation&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Cell</span><span class="w"> </span><span class="nf">cell</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">        </span><span class="n">REQUIRE</span><span class="p">(</span><span class="n">cell</span><span class="p">.</span><span class="n">evolve</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="n">SECTION</span><span class="p">(</span><span class="s">&quot;Reproduction&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Cell</span><span class="w"> </span><span class="nf">cell</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">);</span>
+<span class="w">        </span><span class="n">REQUIRE</span><span class="p">(</span><span class="n">cell</span><span class="p">.</span><span class="n">evolve</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">true</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="execution-des-tests">Exécution des tests<a class="headerlink" href="#execution-des-tests" title="Permanent link">&para;</a></h2>
+<h3 id="compilation-et-lancement">Compilation et lancement<a class="headerlink" href="#compilation-et-lancement" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Configuration</span>
+mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+cmake<span class="w"> </span>-DBUILD_TESTS<span class="o">=</span>ON<span class="w"> </span>..
+
+<span class="c1"># Compilation</span>
+make
+
+<span class="c1"># Exécution</span>
+ctest<span class="w"> </span>--output-on-failure
+<span class="c1"># ou</span>
+./tests/unit_tests
+</code></pre></div>
+<h3 id="options-de-test">Options de test<a class="headerlink" href="#options-de-test" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Exécution d&#39;une section spécifique</span>
+./tests/unit_tests<span class="w"> </span><span class="s2">&quot;[grid]&quot;</span>
+
+<span class="c1"># Exécution avec détails</span>
+./tests/unit_tests<span class="w"> </span>-s
+
+<span class="c1"># Filtrage des tests</span>
+./tests/unit_tests<span class="w"> </span><span class="s2">&quot;[grid][cell]&quot;</span>
+</code></pre></div>
+<h2 id="couverture-de-code">Couverture de code<a class="headerlink" href="#couverture-de-code" title="Permanent link">&para;</a></h2>
+<h3 id="generation-des-rapports">Génération des rapports<a class="headerlink" href="#generation-des-rapports" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Configuration avec couverture</span>
+cmake<span class="w"> </span>-DBUILD_TESTS<span class="o">=</span>ON<span class="w"> </span>-DENABLE_COVERAGE<span class="o">=</span>ON<span class="w"> </span>..
+
+<span class="c1"># Compilation et exécution</span>
+make
+make<span class="w"> </span><span class="nb">test</span>
+
+<span class="c1"># Génération du rapport</span>
+make<span class="w"> </span>coverage
+</code></pre></div>
+<h3 id="analyse-des-resultats">Analyse des résultats<a class="headerlink" href="#analyse-des-resultats" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Ouverture du rapport HTML</span>
+firefox<span class="w"> </span>coverage/index.html
+<span class="c1"># ou</span>
+open<span class="w"> </span>coverage/index.html
+</code></pre></div>
+<h2 id="bonnes-pratiques">Bonnes pratiques<a class="headerlink" href="#bonnes-pratiques" title="Permanent link">&para;</a></h2>
+<h3 id="organisation-des-tests">Organisation des tests<a class="headerlink" href="#organisation-des-tests" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Un fichier de test par classe</li>
+<li>Sections logiques dans chaque test</li>
+<li>Tests des cas limites</li>
+<li>Tests des cas d'erreur</li>
+</ol>
+<h3 id="nommage-des-tests">Nommage des tests<a class="headerlink" href="#nommage-des-tests" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Test de création de grille</li>
-<li>Test des règles d'évolution</li>
-<li>Test de la grille torique</li>
-<li>Test des cellules obstacles</li>
+<li>Noms descriptifs et clairs</li>
+<li>Indication du comportement testé</li>
+<li>Regroupement par fonctionnalité</li>
 </ul>
-<h3 id="exemple-de-test">Exemple de test</h3>
-<h2 id="couverture-de-code">Couverture de code</h2>
+<h3 id="maintenance">Maintenance<a class="headerlink" href="#maintenance" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Couverture actuelle : 85%</li>
-<li>Objectif : 90%</li>
-<li>Points critiques couverts :</li>
-<li>Règles d'évolution</li>
-<li>Gestion des bordures</li>
-<li>Chargement/Sauvegarde</li>
+<li>Mise à jour régulière des tests</li>
+<li>Vérification de la couverture</li>
+<li>Documentation des cas de test</li>
 </ul>
-<h2 id="validation-des-patterns">Validation des patterns</h2>
-<p>Tests spécifiques pour les patterns prédéfinis :
-- Glider
-- Blinker
-- Block
-- Beehive</p>
-<h2 id="tests-de-performance">Tests de performance</h2>
-<ul>
-<li>Test de charge (grille 1000x1000)</li>
-<li>Test de performance du rendu</li>
-<li>Test de la parallélisation</li>
-</ul>
-<h2 id="integration-continue">Intégration continue</h2>
-<p>Les tests sont exécutés automatiquement :
-- À chaque commit
-- Avant chaque merge request
-- Lors du déploiement</p>
 
 
 
@@ -832,7 +2337,7 @@ ctest<span class="w"> </span>--output-on-failure
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>

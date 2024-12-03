@@ -11,20 +11,22 @@
       
       
       
+        <link rel="prev" href="../core/">
       
-        <link rel="next" href="quickstart/">
+      
+        <link rel="next" href="../utils/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
     
     
       
-        <title>Présentation - Jeu de la Vie</title>
+        <title>Renderer - Jeu de la Vie</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
       
 
@@ -43,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#jeu-de-la-vie" class="md-skip">
+        <a href="#renderer-api" class="md-skip">
           Aller au contenu
         </a>
       
@@ -76,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="." title="Jeu de la Vie" class="md-header__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
+    <a href="../../.." title="Jeu de la Vie" class="md-header__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -96,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Présentation
+              Renderer
             
           </span>
         </div>
@@ -163,13 +165,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="." class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
           
   
   Accueil
@@ -193,7 +193,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="guide_utilisateur/installation/prerequisites/" class="md-tabs__link">
+        <a href="../../../guide_utilisateur/installation/prerequisites/" class="md-tabs__link">
           
   
   Guide Utilisateur
@@ -210,17 +210,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="technique/architecture/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../architecture/overview/" class="md-tabs__link">
           
   
   Documentation Technique
@@ -247,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="developpement/contribution/guide/" class="md-tabs__link">
+        <a href="../../../developpement/contribution/guide/" class="md-tabs__link">
           
   
   Guide Développeur
@@ -268,7 +272,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="tests/unitaires/" class="md-tabs__link">
+        <a href="../../../tests/unitaires/" class="md-tabs__link">
           
   
   Tests
@@ -286,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="support/faq/" class="md-tabs__link">
+        <a href="../../../support/faq/" class="md-tabs__link">
           
   
   FAQ & Support
@@ -319,7 +323,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Jeu de la Vie" class="md-nav__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
+    <a href="../../.." title="Jeu de la Vie" class="md-nav__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -334,30 +338,27 @@
       
   
   
-    
   
   
-  
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -368,7 +369,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             Accueil
@@ -379,30 +380,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Présentation
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -411,89 +392,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#presentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Présentation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#caracteristiques-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Caractéristiques principales
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#demarrage-rapide" class="md-nav__link">
-    <span class="md-ellipsis">
-      Démarrage rapide
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#captures-decran" class="md-nav__link">
-    <span class="md-ellipsis">
-      Captures d'écran
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contribution" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contribution
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#licence" class="md-nav__link">
-    <span class="md-ellipsis">
-      Licence
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -506,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="quickstart/" class="md-nav__link">
+      <a href="../../../quickstart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -527,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog/" class="md-nav__link">
+      <a href="../../../changelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -639,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide_utilisateur/installation/prerequisites/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/installation/prerequisites/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +558,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide_utilisateur/installation/setup/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/installation/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -681,7 +579,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide_utilisateur/installation/configuration/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/installation/configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -752,7 +650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide_utilisateur/utilisation/interface/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/utilisation/interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -773,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide_utilisateur/utilisation/commands/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/utilisation/commands/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -794,7 +692,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide_utilisateur/utilisation/patterns/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/utilisation/patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -865,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide_utilisateur/modes/console/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/modes/console/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -886,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide_utilisateur/modes/graphique/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/modes/graphique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -907,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide_utilisateur/modes/debug/" class="md-nav__link">
+      <a href="../../../guide_utilisateur/modes/debug/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -940,27 +838,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -971,7 +872,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Documentation Technique
@@ -990,10 +891,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1002,7 +906,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1027,7 +931,7 @@
   
   
     <li class="md-nav__item">
-      <a href="technique/architecture/overview/" class="md-nav__link">
+      <a href="../../architecture/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1048,7 +952,7 @@
   
   
     <li class="md-nav__item">
-      <a href="technique/architecture/components/" class="md-nav__link">
+      <a href="../../architecture/components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1069,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="technique/architecture/patterns/" class="md-nav__link">
+      <a href="../../architecture/patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1103,10 +1007,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -1115,7 +1022,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1140,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="technique/diagrammes/classes/" class="md-nav__link">
+      <a href="../../diagrammes/classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1161,7 +1068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="technique/diagrammes/sequences/" class="md-nav__link">
+      <a href="../../diagrammes/sequences/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1182,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="technique/diagrammes/states/" class="md-nav__link">
+      <a href="../../diagrammes/states/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1208,27 +1115,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_3" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1239,7 +1149,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             API
@@ -1253,7 +1163,7 @@
   
   
     <li class="md-nav__item">
-      <a href="technique/api/core/" class="md-nav__link">
+      <a href="../core/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1271,10 +1181,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="technique/api/renderer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Renderer
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1283,6 +1213,134 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#interfaces-de-rendu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interfaces de rendu
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interfaces de rendu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#irenderer" class="md-nav__link">
+    <span class="md-ellipsis">
+      IRenderer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consolerenderer" class="md-nav__link">
+    <span class="md-ellipsis">
+      ConsoleRenderer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graphicrenderer" class="md-nav__link">
+    <span class="md-ellipsis">
+      GraphicRenderer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-de-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration de base
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cycle-de-rendu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cycle de rendu
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#themes-et-personnalisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thèmes et personnalisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Thèmes et personnalisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structure-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure Theme
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemples-de-themes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemples de thèmes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1295,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="technique/api/utils/" class="md-nav__link">
+      <a href="../utils/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1415,7 +1473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developpement/contribution/guide/" class="md-nav__link">
+      <a href="../../../developpement/contribution/guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1436,7 +1494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developpement/contribution/workflow/" class="md-nav__link">
+      <a href="../../../developpement/contribution/workflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1457,7 +1515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developpement/contribution/standards/" class="md-nav__link">
+      <a href="../../../developpement/contribution/standards/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1528,7 +1586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developpement/outils/scripts/" class="md-nav__link">
+      <a href="../../../developpement/outils/scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1549,7 +1607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developpement/outils/tests/" class="md-nav__link">
+      <a href="../../../developpement/outils/tests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1570,7 +1628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="developpement/outils/cicd/" class="md-nav__link">
+      <a href="../../../developpement/outils/cicd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1648,7 +1706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tests/unitaires/" class="md-nav__link">
+      <a href="../../../tests/unitaires/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1669,7 +1727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tests/integration/" class="md-nav__link">
+      <a href="../../../tests/integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1690,7 +1748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tests/benchmarks/" class="md-nav__link">
+      <a href="../../../tests/benchmarks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1760,7 +1818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="support/faq/" class="md-nav__link">
+      <a href="../../../support/faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1781,7 +1839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="support/troubleshooting/" class="md-nav__link">
+      <a href="../../../support/troubleshooting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1802,7 +1860,7 @@
   
   
     <li class="md-nav__item">
-      <a href="support/contact/" class="md-nav__link">
+      <a href="../../../support/contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1850,65 +1908,110 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#presentation" class="md-nav__link">
+  <a href="#interfaces-de-rendu" class="md-nav__link">
     <span class="md-ellipsis">
-      Présentation
+      Interfaces de rendu
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interfaces de rendu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#irenderer" class="md-nav__link">
+    <span class="md-ellipsis">
+      IRenderer
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#caracteristiques-principales" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#consolerenderer" class="md-nav__link">
     <span class="md-ellipsis">
-      Caractéristiques principales
+      ConsoleRenderer
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#demarrage-rapide" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#graphicrenderer" class="md-nav__link">
     <span class="md-ellipsis">
-      Démarrage rapide
+      GraphicRenderer
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
-    <span class="md-ellipsis">
-      Documentation
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#captures-decran" class="md-nav__link">
+  <a href="#utilisation" class="md-nav__link">
     <span class="md-ellipsis">
-      Captures d'écran
+      Utilisation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuration-de-base" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration de base
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#contribution" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#cycle-de-rendu" class="md-nav__link">
     <span class="md-ellipsis">
-      Contribution
+      Cycle de rendu
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#licence" class="md-nav__link">
+  <a href="#themes-et-personnalisation" class="md-nav__link">
     <span class="md-ellipsis">
-      Licence
+      Thèmes et personnalisation
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Thèmes et personnalisation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structure-theme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Structure Theme
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exemples-de-themes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exemples de thèmes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1927,43 +2030,115 @@
                   
 
 
-<h1 id="jeu-de-la-vie">Jeu de la Vie<a class="headerlink" href="#jeu-de-la-vie" title="Permanent link">&para;</a></h1>
-<h2 id="presentation">Présentation<a class="headerlink" href="#presentation" title="Permanent link">&para;</a></h2>
-<p>Le Jeu de la Vie est un automate cellulaire créé par John Conway en 1970. Cette implémentation propose une version moderne et interactive du jeu classique.</p>
-<h2 id="caracteristiques-principales">Caractéristiques principales<a class="headerlink" href="#caracteristiques-principales" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Interface graphique moderne</strong> utilisant SFML</li>
-<li><strong>Mode console</strong> pour les performances optimales</li>
-<li><strong>Mode debug</strong> pour le développement</li>
-<li><strong>Motifs prédéfinis</strong> classiques et personnalisables</li>
-<li><strong>Haute performance</strong> grâce à une implémentation optimisée</li>
-<li><strong>Multi-plateforme</strong> : Linux, Windows, macOS</li>
-</ul>
-<h2 id="demarrage-rapide">Démarrage rapide<a class="headerlink" href="#demarrage-rapide" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># Installation</span>
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/votre-repo/jeu-de-vie.git
-<span class="nb">cd</span><span class="w"> </span>jeu-de-vie
-mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
-cmake<span class="w"> </span>..
-make
+<h1 id="renderer-api">Renderer API<a class="headerlink" href="#renderer-api" title="Permanent link">&para;</a></h1>
+<h2 id="interfaces-de-rendu">Interfaces de rendu<a class="headerlink" href="#interfaces-de-rendu" title="Permanent link">&para;</a></h2>
+<h3 id="irenderer">IRenderer<a class="headerlink" href="#irenderer" title="Permanent link">&para;</a></h3>
+<p>Interface de base pour tous les renderers.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">IRenderer</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">IRenderer</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span>
 
-<span class="c1"># Lancement</span>
-./jeu-de-vie
+<span class="w">    </span><span class="c1">// Méthodes principales</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">render</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Grid</span><span class="o">&amp;</span><span class="w"> </span><span class="n">grid</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">clear</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">update</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Configuration</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setScale</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">scale</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setColor</span><span class="p">(</span><span class="n">Color</span><span class="w"> </span><span class="n">cellColor</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">setGridLines</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">show</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">};</span>
 </code></pre></div>
-<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="guide_utilisateur/installation/prerequisites/">Guide d'installation</a></li>
-<li><a href="guide_utilisateur/utilisation/interface/">Guide d'utilisation</a></li>
-<li><a href="technique/architecture/overview/">Documentation technique</a></li>
-<li><a href="developpement/contribution/guide/">Guide du développeur</a></li>
-</ul>
-<h2 id="captures-decran">Captures d'écran<a class="headerlink" href="#captures-decran" title="Permanent link">&para;</a></h2>
-<p><img alt="Mode graphique" src="assets/images/graphique.png" />
-<img alt="Mode console" src="assets/images/console.png" /></p>
-<h2 id="contribution">Contribution<a class="headerlink" href="#contribution" title="Permanent link">&para;</a></h2>
-<p>Nous accueillons toutes les contributions ! Consultez notre <a href="developpement/contribution/guide/">guide de contribution</a> pour commencer.</p>
-<h2 id="licence">Licence<a class="headerlink" href="#licence" title="Permanent link">&para;</a></h2>
-<p>Ce projet est sous licence MIT. Voir le fichier <a href="https://github.com/votre-repo/jeu-de-vie/blob/main/LICENSE">LICENSE</a> pour plus de détails.</p>
+<h3 id="consolerenderer">ConsoleRenderer<a class="headerlink" href="#consolerenderer" title="Permanent link">&para;</a></h3>
+<p>Implémentation pour l'affichage console.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ConsoleRenderer</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">IRenderer</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">ConsoleRenderer</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">width</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">height</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">render</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Grid</span><span class="o">&amp;</span><span class="w"> </span><span class="n">grid</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">clear</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">update</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Options spécifiques console</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setSymbols</span><span class="p">(</span><span class="kt">char</span><span class="w"> </span><span class="n">alive</span><span class="p">,</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="n">dead</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setColorMode</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">enabled</span><span class="p">);</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">aliveSymbol</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="n">deadSymbol</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">colorEnabled</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<h3 id="graphicrenderer">GraphicRenderer<a class="headerlink" href="#graphicrenderer" title="Permanent link">&para;</a></h3>
+<p>Implémentation pour l'affichage graphique SFML.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">GraphicRenderer</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">IRenderer</span><span class="w"> </span><span class="p">{</span>
+<span class="k">public</span><span class="o">:</span>
+<span class="w">    </span><span class="n">GraphicRenderer</span><span class="p">(</span><span class="n">sf</span><span class="o">::</span><span class="n">RenderWindow</span><span class="o">&amp;</span><span class="w"> </span><span class="n">window</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">render</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Grid</span><span class="o">&amp;</span><span class="w"> </span><span class="n">grid</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">clear</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">update</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">// Options graphiques</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setZoom</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">level</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setPan</span><span class="p">(</span><span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">y</span><span class="p">);</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">setTheme</span><span class="p">(</span><span class="n">Theme</span><span class="w"> </span><span class="n">theme</span><span class="p">);</span>
+
+<span class="k">private</span><span class="o">:</span>
+<span class="w">    </span><span class="n">sf</span><span class="o">::</span><span class="n">RenderWindow</span><span class="o">&amp;</span><span class="w"> </span><span class="n">window</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">zoom</span><span class="p">;</span>
+<span class="w">    </span><span class="n">Vector2f</span><span class="w"> </span><span class="n">pan</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<h2 id="utilisation">Utilisation<a class="headerlink" href="#utilisation" title="Permanent link">&para;</a></h2>
+<h3 id="configuration-de-base">Configuration de base<a class="headerlink" href="#configuration-de-base" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Console</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">renderer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">make_unique</span><span class="o">&lt;</span><span class="n">ConsoleRenderer</span><span class="o">&gt;</span><span class="p">(</span><span class="mi">80</span><span class="p">,</span><span class="w"> </span><span class="mi">24</span><span class="p">);</span>
+<span class="n">renderer</span><span class="o">-&gt;</span><span class="n">setSymbols</span><span class="p">(</span><span class="sc">&#39;■&#39;</span><span class="p">,</span><span class="w"> </span><span class="sc">&#39;□&#39;</span><span class="p">);</span>
+<span class="n">renderer</span><span class="o">-&gt;</span><span class="n">setColorMode</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+
+<span class="c1">// Graphique</span>
+<span class="n">sf</span><span class="o">::</span><span class="n">RenderWindow</span><span class="w"> </span><span class="n">window</span><span class="p">(</span><span class="n">sf</span><span class="o">::</span><span class="n">VideoMode</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span><span class="w"> </span><span class="mi">600</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;Game of Life&quot;</span><span class="p">);</span>
+<span class="k">auto</span><span class="w"> </span><span class="n">renderer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">make_unique</span><span class="o">&lt;</span><span class="n">GraphicRenderer</span><span class="o">&gt;</span><span class="p">(</span><span class="n">window</span><span class="p">);</span>
+<span class="n">renderer</span><span class="o">-&gt;</span><span class="n">setScale</span><span class="p">(</span><span class="mf">2.0f</span><span class="p">);</span>
+<span class="n">renderer</span><span class="o">-&gt;</span><span class="n">setGridLines</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="cycle-de-rendu">Cycle de rendu<a class="headerlink" href="#cycle-de-rendu" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">GameLoop::render</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">renderer</span><span class="o">-&gt;</span><span class="n">clear</span><span class="p">();</span>
+<span class="w">    </span><span class="n">renderer</span><span class="o">-&gt;</span><span class="n">render</span><span class="p">(</span><span class="n">grid</span><span class="p">);</span>
+<span class="w">    </span><span class="n">renderer</span><span class="o">-&gt;</span><span class="n">update</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="themes-et-personnalisation">Thèmes et personnalisation<a class="headerlink" href="#themes-et-personnalisation" title="Permanent link">&para;</a></h2>
+<h3 id="structure-theme">Structure Theme<a class="headerlink" href="#structure-theme" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">struct</span><span class="w"> </span><span class="nc">Theme</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Color</span><span class="w"> </span><span class="n">backgroundColor</span><span class="p">;</span>
+<span class="w">    </span><span class="n">Color</span><span class="w"> </span><span class="n">cellColor</span><span class="p">;</span>
+<span class="w">    </span><span class="n">Color</span><span class="w"> </span><span class="n">gridColor</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">gridThickness</span><span class="p">;</span>
+<span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">cellPadding</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre></div>
+<h3 id="exemples-de-themes">Exemples de thèmes<a class="headerlink" href="#exemples-de-themes" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Thème clair</span>
+<span class="n">Theme</span><span class="w"> </span><span class="n">lightTheme</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="n">backgroundColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="o">::</span><span class="n">White</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">cellColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="o">::</span><span class="n">Black</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">gridColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="o">::</span><span class="n">Gray</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">gridThickness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">cellPadding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span>
+<span class="p">};</span>
+
+<span class="c1">// Thème sombre</span>
+<span class="n">Theme</span><span class="w"> </span><span class="n">darkTheme</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="n">backgroundColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="o">::</span><span class="n">Black</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">cellColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="o">::</span><span class="n">Green</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">gridColor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Color</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">,</span><span class="w"> </span><span class="mi">50</span><span class="p">),</span>
+<span class="w">    </span><span class="p">.</span><span class="n">gridThickness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span><span class="p">,</span>
+<span class="w">    </span><span class="p">.</span><span class="n">cellPadding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0f</span>
+<span class="p">};</span>
+</code></pre></div>
 
 
 
@@ -2010,10 +2185,10 @@ make
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>

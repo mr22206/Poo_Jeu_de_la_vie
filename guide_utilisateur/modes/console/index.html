@@ -11,18 +11,22 @@
       
       
       
+        <link rel="prev" href="../../utilisation/patterns/">
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="next" href="../graphique/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
     
     
       
-        <title>Jeu de la Vie</title>
+        <title>Mode Console - Jeu de la Vie</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
       
       
 
@@ -41,7 +45,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#mode-console" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -69,7 +78,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="/." title="Jeu de la Vie" class="md-header__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
+    <a href="../../.." title="Jeu de la Vie" class="md-header__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Mode Console
             
           </span>
         </div>
@@ -160,7 +169,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/." class="md-tabs__link">
+        <a href="../../.." class="md-tabs__link">
           
   
   Accueil
@@ -174,17 +183,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/guide_utilisateur/installation/prerequisites/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../installation/prerequisites/" class="md-tabs__link">
           
   
   Guide Utilisateur
@@ -211,7 +224,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/technique/architecture/overview/" class="md-tabs__link">
+        <a href="../../../technique/architecture/overview/" class="md-tabs__link">
           
   
   Documentation Technique
@@ -238,7 +251,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/developpement/contribution/guide/" class="md-tabs__link">
+        <a href="../../../developpement/contribution/guide/" class="md-tabs__link">
           
   
   Guide Développeur
@@ -259,7 +272,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/tests/unitaires/" class="md-tabs__link">
+        <a href="../../../tests/unitaires/" class="md-tabs__link">
           
   
   Tests
@@ -277,7 +290,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/support/faq/" class="md-tabs__link">
+        <a href="../../../support/faq/" class="md-tabs__link">
           
   
   FAQ & Support
@@ -310,7 +323,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/." title="Jeu de la Vie" class="md-nav__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
+    <a href="../../.." title="Jeu de la Vie" class="md-nav__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -370,7 +383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -391,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/quickstart/" class="md-nav__link">
+      <a href="../../../quickstart/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -412,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/changelog/" class="md-nav__link">
+      <a href="../../../changelog/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -437,27 +450,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -468,7 +484,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Guide Utilisateur
@@ -487,10 +503,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -499,7 +518,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -524,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/installation/prerequisites/" class="md-nav__link">
+      <a href="../../installation/prerequisites/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -545,7 +564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/installation/setup/" class="md-nav__link">
+      <a href="../../installation/setup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -566,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/installation/configuration/" class="md-nav__link">
+      <a href="../../installation/configuration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,10 +619,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -612,7 +634,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -637,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/utilisation/interface/" class="md-nav__link">
+      <a href="../../utilisation/interface/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -658,7 +680,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/utilisation/commands/" class="md-nav__link">
+      <a href="../../utilisation/commands/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -679,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/utilisation/patterns/" class="md-nav__link">
+      <a href="../../utilisation/patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -705,27 +727,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
         
           
+          
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -736,7 +761,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             Modes de jeu
@@ -747,10 +772,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/guide_utilisateur/modes/console/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Mode Console
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -759,6 +804,125 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lancement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lancement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lancement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options disponibles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#affichage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Affichage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commandes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commandes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonctionnalites-specifiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fonctionnalités spécifiques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonctionnalités spécifiques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logs-et-debug" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logs et débug
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-des-resultats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export des résultats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -771,7 +935,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/modes/graphique/" class="md-nav__link">
+      <a href="../graphique/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -792,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/guide_utilisateur/modes/debug/" class="md-nav__link">
+      <a href="../debug/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -912,7 +1076,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/architecture/overview/" class="md-nav__link">
+      <a href="../../../technique/architecture/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -933,7 +1097,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/architecture/components/" class="md-nav__link">
+      <a href="../../../technique/architecture/components/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -954,7 +1118,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/architecture/patterns/" class="md-nav__link">
+      <a href="../../../technique/architecture/patterns/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1025,7 +1189,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/diagrammes/classes/" class="md-nav__link">
+      <a href="../../../technique/diagrammes/classes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1046,7 +1210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/diagrammes/sequences/" class="md-nav__link">
+      <a href="../../../technique/diagrammes/sequences/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1067,7 +1231,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/diagrammes/states/" class="md-nav__link">
+      <a href="../../../technique/diagrammes/states/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1138,7 +1302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/api/core/" class="md-nav__link">
+      <a href="../../../technique/api/core/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1159,7 +1323,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/api/renderer/" class="md-nav__link">
+      <a href="../../../technique/api/renderer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1180,7 +1344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/technique/api/utils/" class="md-nav__link">
+      <a href="../../../technique/api/utils/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1300,7 +1464,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/contribution/guide/" class="md-nav__link">
+      <a href="../../../developpement/contribution/guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1321,7 +1485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/contribution/workflow/" class="md-nav__link">
+      <a href="../../../developpement/contribution/workflow/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1342,7 +1506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/contribution/standards/" class="md-nav__link">
+      <a href="../../../developpement/contribution/standards/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1413,7 +1577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/outils/scripts/" class="md-nav__link">
+      <a href="../../../developpement/outils/scripts/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1434,7 +1598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/outils/tests/" class="md-nav__link">
+      <a href="../../../developpement/outils/tests/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1455,7 +1619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/developpement/outils/cicd/" class="md-nav__link">
+      <a href="../../../developpement/outils/cicd/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1533,7 +1697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tests/unitaires/" class="md-nav__link">
+      <a href="../../../tests/unitaires/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1554,7 +1718,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tests/integration/" class="md-nav__link">
+      <a href="../../../tests/integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1575,7 +1739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/tests/benchmarks/" class="md-nav__link">
+      <a href="../../../tests/benchmarks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1645,7 +1809,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/support/faq/" class="md-nav__link">
+      <a href="../../../support/faq/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1666,7 +1830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/support/troubleshooting/" class="md-nav__link">
+      <a href="../../../support/troubleshooting/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1687,7 +1851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/support/contact/" class="md-nav__link">
+      <a href="../../../support/contact/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1725,6 +1889,115 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Présentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lancement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lancement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lancement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#options-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Options disponibles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#affichage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Affichage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commandes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commandes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonctionnalites-specifiques" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fonctionnalités spécifiques
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonctionnalités spécifiques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logs-et-debug" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logs et débug
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-des-resultats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Export des résultats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1736,8 +2009,93 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+<h1 id="mode-console">Mode Console<a class="headerlink" href="#mode-console" title="Permanent link">&para;</a></h1>
+<h2 id="presentation">Présentation<a class="headerlink" href="#presentation" title="Permanent link">&para;</a></h2>
+<p>Le mode console est une interface légère et efficace, particulièrement adaptée pour :
+- L'exécution en environnement serveur
+- Les tests automatisés
+- Les systèmes sans interface graphique
+- Les performances optimales
+- Le débogage rapide</p>
+<h2 id="lancement">Lancement<a class="headerlink" href="#lancement" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>./jeu-de-vie<span class="w"> </span>-c<span class="w"> </span>&lt;fichier_config&gt;<span class="w"> </span><span class="o">[</span>options<span class="o">]</span>
+</code></pre></div>
+<h3 id="options-disponibles">Options disponibles<a class="headerlink" href="#options-disponibles" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>-n &lt;iterations&gt;</code> : Nombre d'itérations à exécuter</li>
+<li><code>-d &lt;delai&gt;</code> : Délai entre générations (ms)</li>
+<li><code>-o &lt;fichier&gt;</code> : Fichier de sortie</li>
+<li><code>-v</code> : Mode verbeux</li>
+<li><code>-q</code> : Mode silencieux</li>
+</ul>
+<h2 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link">&para;</a></h2>
+<h3 id="affichage">Affichage<a class="headerlink" href="#affichage" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>Génération: 42
+Population: 123
+[0][1][0][0][0]
+[0][1][1][0][0]
+[0][1][0][0][0]
+[0][0][0][0][0]
+</code></pre></div>
+<h3 id="commandes">Commandes<a class="headerlink" href="#commandes" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Touche</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n</td>
+<td>Génération suivante</td>
+</tr>
+<tr>
+<td>p</td>
+<td>Pause/Reprise</td>
+</tr>
+<tr>
+<td>s</td>
+<td>Sauvegarder</td>
+</tr>
+<tr>
+<td>q</td>
+<td>Quitter</td>
+</tr>
+<tr>
+<td>r</td>
+<td>Réinitialiser</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fonctionnalites-specifiques">Fonctionnalités spécifiques<a class="headerlink" href="#fonctionnalites-specifiques" title="Permanent link">&para;</a></h2>
+<h3 id="logs-et-debug">Logs et débug<a class="headerlink" href="#logs-et-debug" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Activation des logs détaillés</span>
+./jeu-de-vie<span class="w"> </span>-c<span class="w"> </span>config.txt<span class="w"> </span>-v<span class="w"> </span>--log-level<span class="o">=</span>debug
+</code></pre></div>
+<h3 id="export-des-resultats">Export des résultats<a class="headerlink" href="#export-des-resultats" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Export en CSV</span>
+./jeu-de-vie<span class="w"> </span>-c<span class="w"> </span>config.txt<span class="w"> </span>-o<span class="w"> </span>resultats.csv
+
+<span class="c1"># Export en format texte</span>
+./jeu-de-vie<span class="w"> </span>-c<span class="w"> </span>config.txt<span class="w"> </span>-o<span class="w"> </span>resultats.txt
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1771,10 +2129,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.tabs", "navigation.sections", "navigation.expand"], "search": "/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
