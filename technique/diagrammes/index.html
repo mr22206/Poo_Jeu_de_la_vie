@@ -624,6 +624,54 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Diagramme de Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classes-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes principales
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagramme-de-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagramme de séquence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagramme de séquence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flux-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flux principal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagramme-dactivite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagramme d'Activité
+    </span>
+  </a>
+  
 </li>
       
         <li class="md-nav__item">
@@ -951,6 +999,54 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Diagramme de Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classes-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes principales
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagramme-de-sequence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagramme de séquence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Diagramme de séquence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flux-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flux principal
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diagramme-dactivite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagramme d'Activité
+    </span>
+  </a>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1203,30 +1299,66 @@
 
     Subject  &lt;|-- Game : inherits
     Observer &lt;|-- IRenderer : inherits
-    Observer &lt;|-- FileHandler : inherits
+    Observer &lt;|-- FileHandler : inherits</code></pre>
+<h3 id="classes-principales">Classes principales</h3>
+<ul>
+<li><strong>Grid</strong> : Gestion de la grille de jeu</li>
+<li><strong>Cell</strong> : Représentation d'une cellule</li>
+<li><strong>Game</strong> : Moteur du jeu</li>
+<li><strong>Renderer</strong> : Interface d'affichage</li>
+<li>ConsoleRenderer</li>
+<li>SFMLRenderer</li>
+</ul>
+<h2 id="diagramme-de-sequence">Diagramme de séquence</h2>
+<pre class="mermaid"><code>---
+config:
+  theme: neutral
+---
+sequenceDiagram
+
+  User -&gt;&gt; Programme: Lancer le programme
+  Programme -&gt;&gt; Game: Instancie game
+  Programme -&gt;&gt; Game: Game.setup()
+  Game -&gt;&gt; Config: Config.setup(this)
+  Config -&gt;&gt; User: Demande la config
+  User --&gt;&gt; Config: Entre la config
+  alt User joue a partir d'un fichier
+    Config -&gt;&gt; FileHandler: loadGridFromFile()
+    FileHandler --&gt;&gt; Config: return vector des 1 et 0
+    Config -&gt;&gt; Grid: Grid.initCells()
+  end
+  alt User joue a partir d'une nouvelle partie
+    Config -&gt;&gt; Grid: Grid.initCellsRandom()
+  end
+  Grid -&gt;&gt; Cell: Creation des cellules
+  Config --&gt;&gt;Game: Set les valeurs pour game
+  Game -&gt;&gt; IRenderer: Subject.attach()
+  Game -&gt;&gt; FileHandler: Subject.attach()
 
 
-### Classes principales
-- **Grid** : Gestion de la grille de jeu
-- **Cell** : Représentation d'une cellule
-- **Game** : Moteur du jeu
-- **Renderer** : Interface d'affichage
-  - ConsoleRenderer
-  - SFMLRenderer
+  Programme -&gt;&gt; Game: Game.run()
+  loop Pour chaque itération
+    Game -&gt;&gt; Grid: Grid.calculateNextGen()
+    loop Pour chaque cellule
+      Grid -&gt;&gt; IEvolutionStrategy: IEvolutionStrategy.update(Cell) 
+    end
+    Game -&gt;&gt; Game: Subject.notify()
+    Game -&gt;&gt; FileHandler: FileHandler.saveGridToFile()
+    Game -&gt;&gt; IRenderer: IRenderer.update()
+    IRenderer --&gt;&gt; User: Montre la grille maj
+  end
 
-## Diagramme de séquence
-![Diagramme de séquence](../assets/images/sequence_diagram.png)
-
-### Flux principal
-1. Initialisation du jeu
-2. Boucle de simulation
-3. Mise à jour de l'affichage
-4. Gestion des événements
-
-## Diagramme d'Activité
-
-```mermaid
-stateDiagram-v2
+  Game --&gt;&gt; Programme: Terminer après conditions atteintes (stabilité ou itérations max)
+  Programme --&gt;&gt; User: Fin</code></pre>
+<h3 id="flux-principal">Flux principal</h3>
+<ol>
+<li>Initialisation du jeu</li>
+<li>Boucle de simulation</li>
+<li>Mise à jour de l'affichage</li>
+<li>Gestion des événements</li>
+</ol>
+<h2 id="diagramme-dactivite">Diagramme d'Activité</h2>
+<pre class="mermaid"><code>stateDiagram-v2
     [*] --&gt; Initialisation
     Initialisation --&gt; BoucleJeu
 
