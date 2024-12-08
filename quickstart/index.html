@@ -6,13 +6,15 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation technique et utilisateur du Jeu de la Vie">
-      
-      
-        <meta name="author" content="Votre Nom">
+        <meta name="description" content="Documentation du Jeu de la Vie">
       
       
       
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../guide_utilisateur/installation/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -20,11 +22,14 @@
     
     
       
-        <title>Démarrage Rapide - Game of Life Documentation</title>
+        <title>Démarrage rapide - Jeu de la Vie</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -53,7 +58,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -71,16 +83,12 @@
       
     </div>
     
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-      </div>
-    
     
       
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href=".." title="Game of Life Documentation" class="md-header__button md-logo" aria-label="Game of Life Documentation" data-md-component="logo">
+    <a href=".." title="Jeu de la Vie" class="md-header__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -94,18 +102,30 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Game of Life Documentation
+            Jeu de la Vie
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Démarrage Rapide
+              Démarrage rapide
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -167,17 +187,20 @@
         
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
-        
   
     
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href=".." class="md-tabs__link">
+          
   
   Accueil
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -205,23 +228,14 @@
   
     
     
-      
-  
-  
-  
-    
-    
       <li class="md-tabs__item">
-        <a href="../technique/architecture/overview/" class="md-tabs__link">
+        <a href="../technique/diagrammes/" class="md-tabs__link">
           
   
   Documentation Technique
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -248,19 +262,64 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Game of Life Documentation" class="md-nav__button md-logo" aria-label="Game of Life Documentation" data-md-component="logo">
+    <a href=".." title="Jeu de la Vie" class="md-nav__button md-logo" aria-label="Jeu de la Vie" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Game of Life Documentation
+    Jeu de la Vie
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
       
       
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Accueil
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Accueil
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
   
   
   
@@ -270,11 +329,272 @@
         
   
   <span class="md-ellipsis">
-    Accueil
+    Présentation du projet
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Démarrage rapide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Démarrage rapide
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vue-densemble" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vue d'ensemble
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prérequis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prérequis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environnement-de-developpement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environnement de développement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#espace-disque" class="md-nav__link">
+    <span class="md-ellipsis">
+      Espace disque
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linux-ubuntudebian" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux (Ubuntu/Debian)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      macOS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lancement-rapide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lancement rapide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Lancement rapide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mode-graphique-defaut" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mode graphique (défaut)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mode-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mode console
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#commandes-essentielles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commandes essentielles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Commandes essentielles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#controles-generaux" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contrôles généraux
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactions-souris-mode-graphique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interactions souris (Mode graphique)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verification-de-linstallation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vérification de l'installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vérification de l'installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tests-rapides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tests rapides
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problemes-courants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problèmes courants
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prochaines-etapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prochaines étapes
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -298,9 +618,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -361,9 +679,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -460,9 +776,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -489,6 +803,48 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../technique/diagrammes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Diagrammes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technique/configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
     
@@ -502,12 +858,10 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -518,8 +872,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Architecture
           </label>
@@ -581,12 +935,52 @@
   
   
   
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Outils & Workflow
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Outils & Workflow
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../technique/diagrammes/" class="md-nav__link">
+      <a href="../technique/workflow/tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Diagrammes
+    Stack technique
   </span>
   
 
@@ -603,15 +997,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../technique/configuration/" class="md-nav__link">
+      <a href="../technique/workflow/development/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Configuration
+    Workflow de développement
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -628,103 +1030,11 @@
         
   
   <span class="md-ellipsis">
-    Tests
+    Tests unitaires
   </span>
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Workflow
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_5">
-            <span class="md-nav__icon md-icon"></span>
-            Workflow
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../technique/workflow/development/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Développement
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../technique/workflow/tools/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Outils
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -970,11 +1280,11 @@
                   
 
 
-<h1 id="demarrage-rapide">Démarrage Rapide<a class="headerlink" href="#demarrage-rapide" title="Permanent link">&para;</a></h1>
-<h2 id="vue-densemble">Vue d'ensemble<a class="headerlink" href="#vue-densemble" title="Permanent link">&para;</a></h2>
+<h1 id="demarrage-rapide">Démarrage Rapide</h1>
+<h2 id="vue-densemble">Vue d'ensemble</h2>
 <p>Ce guide vous permettra d'installer et lancer rapidement le Jeu de la Vie. Pour une installation plus détaillée, consultez le <a href="../guide_utilisateur/installation/">guide d'installation complet</a>.</p>
-<h2 id="prerequis">Prérequis<a class="headerlink" href="#prerequis" title="Permanent link">&para;</a></h2>
-<h3 id="environnement-de-developpement">Environnement de développement<a class="headerlink" href="#environnement-de-developpement" title="Permanent link">&para;</a></h3>
+<h2 id="prerequis">Prérequis</h2>
+<h3 id="environnement-de-developpement">Environnement de développement</h3>
 <table>
 <thead>
 <tr>
@@ -1006,47 +1316,32 @@
 </tr>
 </tbody>
 </table>
-<h3 id="espace-disque">Espace disque<a class="headerlink" href="#espace-disque" title="Permanent link">&para;</a></h3>
+<h3 id="espace-disque">Espace disque</h3>
 <ul>
 <li>Sources : ~10 MB</li>
 <li>Build : ~100 MB</li>
 <li>Installation : ~50 MB</li>
 </ul>
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<h3 id="linux-ubuntudebian">Linux (Ubuntu/Debian)<a class="headerlink" href="#linux-ubuntudebian" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Mise à jour du système</span>
-sudo<span class="w"> </span>apt<span class="w"> </span>update
-
-<span class="c1"># Installation des dépendances</span>
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>build-essential<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>cmake<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>libsfml-dev<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>git
-
-<span class="c1"># Clonage et compilation</span>
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/votre-repo/jeu-de-vie
-<span class="nb">cd</span><span class="w"> </span>jeu-de-vie
-mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
-cmake<span class="w"> </span>..
-make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span>
-</code></pre></div></td></tr></table></div>
-<h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
+<h2 id="installation">Installation</h2>
+<h3 id="linux-ubuntudebian">Linux (Ubuntu/Debian)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Mise à jour du système</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Installation des dépendances</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span>build-essential<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span>cmake<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span>libsfml-dev<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span>git
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="c1"># Clonage et compilation</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/votre-repo/jeu-de-vie
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="nb">cd</span><span class="w"> </span>jeu-de-vie
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>cmake<span class="w"> </span>..
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</span>
+</code></pre></div>
+<h3 id="windows">Windows</h3>
 <ol>
 <li><strong>Installer les outils</strong></li>
 <li><a href="https://visualstudio.microsoft.com/">Visual Studio</a> avec C++</li>
@@ -1057,76 +1352,49 @@ make<span class="w"> </span>-j<span class="k">$(</span>nproc<span class="k">)</s
 </li>
 <li>
 <p><strong>Compiler</strong>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c"># Cloner le projet</span>
-<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">://</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">votre-repo</span><span class="p">/</span><span class="n">jeu-de-vie</span>
-<span class="nb">cd </span><span class="n">jeu-de-vie</span>
-
-<span class="c"># Créer et configurer le build</span>
-<span class="n">mkdir</span> <span class="n">build</span>
-<span class="nb">cd </span><span class="n">build</span>
-<span class="n">cmake</span> <span class="p">..</span>
-
-<span class="c"># Ouvrir et compiler avec Visual Studio</span>
-<span class="nb">start </span><span class="n">JeuDeLaVie</span><span class="p">.</span><span class="n">sln</span>
-</code></pre></div></td></tr></table></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c"># Cloner le projet</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">://</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">votre-repo</span><span class="p">/</span><span class="n">jeu-de-vie</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">cd </span><span class="n">jeu-de-vie</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c"># Créer et configurer le build</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">mkdir</span> <span class="n">build</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">cd </span><span class="n">build</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">cmake</span> <span class="p">..</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c"># Ouvrir et compiler avec Visual Studio</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nb">start </span><span class="n">JeuDeLaVie</span><span class="p">.</span><span class="n">sln</span>
+</code></pre></div></p>
 </li>
 </ol>
-<h3 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Installer les dépendances avec Homebrew</span>
-brew<span class="w"> </span>update
-brew<span class="w"> </span>install<span class="w"> </span>cmake<span class="w"> </span>sfml<span class="w"> </span>git
-
-<span class="c1"># Cloner et compiler</span>
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/votre-repo/jeu-de-vie
-<span class="nb">cd</span><span class="w"> </span>jeu-de-vie
-mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
-cmake<span class="w"> </span>..
-make<span class="w"> </span>-j<span class="k">$(</span>sysctl<span class="w"> </span>-n<span class="w"> </span>hw.ncpu<span class="k">)</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="lancement-rapide">Lancement rapide<a class="headerlink" href="#lancement-rapide" title="Permanent link">&para;</a></h2>
-<h3 id="mode-graphique-defaut">Mode graphique (défaut)<a class="headerlink" href="#mode-graphique-defaut" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Lancer avec paramètres par défaut</span>
-./jeu-de-vie
-
-<span class="c1"># Spécifier la taille de la grille</span>
-./jeu-de-vie<span class="w"> </span>--width<span class="w"> </span><span class="m">100</span><span class="w"> </span>--height<span class="w"> </span><span class="m">100</span>
-</code></pre></div></td></tr></table></div>
-<h3 id="mode-console">Mode console<a class="headerlink" href="#mode-console" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Mode console simple</span>
-./jeu-de-vie<span class="w"> </span>-c
-
-<span class="c1"># Mode console avec options</span>
-./jeu-de-vie<span class="w"> </span>-c<span class="w"> </span>--speed<span class="w"> </span><span class="m">2</span><span class="w"> </span>--toroidal
-</code></pre></div></td></tr></table></div>
-<h2 id="commandes-essentielles">Commandes essentielles<a class="headerlink" href="#commandes-essentielles" title="Permanent link">&para;</a></h2>
-<h3 id="controles-generaux">Contrôles généraux<a class="headerlink" href="#controles-generaux" title="Permanent link">&para;</a></h3>
+<h3 id="macos">macOS</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Installer les dépendances avec Homebrew</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>brew<span class="w"> </span>update
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>brew<span class="w"> </span>install<span class="w"> </span>cmake<span class="w"> </span>sfml<span class="w"> </span>git
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># Cloner et compiler</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/votre-repo/jeu-de-vie
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nb">cd</span><span class="w"> </span>jeu-de-vie
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>mkdir<span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>cmake<span class="w"> </span>..
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>make<span class="w"> </span>-j<span class="k">$(</span>sysctl<span class="w"> </span>-n<span class="w"> </span>hw.ncpu<span class="k">)</span>
+</code></pre></div>
+<h2 id="lancement-rapide">Lancement rapide</h2>
+<h3 id="mode-graphique-defaut">Mode graphique (défaut)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Lancer avec paramètres par défaut</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>./jeu-de-vie
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Spécifier la taille de la grille</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>./jeu-de-vie<span class="w"> </span>--width<span class="w"> </span><span class="m">100</span><span class="w"> </span>--height<span class="w"> </span><span class="m">100</span>
+</code></pre></div>
+<h3 id="mode-console">Mode console</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Mode console simple</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>./jeu-de-vie<span class="w"> </span>-c
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Mode console avec options</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>./jeu-de-vie<span class="w"> </span>-c<span class="w"> </span>--speed<span class="w"> </span><span class="m">2</span><span class="w"> </span>--toroidal
+</code></pre></div>
+<h2 id="commandes-essentielles">Commandes essentielles</h2>
+<h3 id="controles-generaux">Contrôles généraux</h3>
 <table>
 <thead>
 <tr>
@@ -1158,7 +1426,7 @@ make<span class="w"> </span>-j<span class="k">$(</span>sysctl<span class="w"> </
 </tr>
 </tbody>
 </table>
-<h3 id="interactions-souris-mode-graphique">Interactions souris (Mode graphique)<a class="headerlink" href="#interactions-souris-mode-graphique" title="Permanent link">&para;</a></h3>
+<h3 id="interactions-souris-mode-graphique">Interactions souris (Mode graphique)</h3>
 <table>
 <thead>
 <tr>
@@ -1185,15 +1453,15 @@ make<span class="w"> </span>-j<span class="k">$(</span>sysctl<span class="w"> </
 </tr>
 </tbody>
 </table>
-<h2 id="verification-de-linstallation">Vérification de l'installation<a class="headerlink" href="#verification-de-linstallation" title="Permanent link">&para;</a></h2>
-<h3 id="tests-rapides">Tests rapides<a class="headerlink" href="#tests-rapides" title="Permanent link">&para;</a></h3>
+<h2 id="verification-de-linstallation">Vérification de l'installation</h2>
+<h3 id="tests-rapides">Tests rapides</h3>
 <ol>
 <li>Lancer le programme</li>
 <li>Vérifier l'affichage</li>
 <li>Tester les contrôles de base</li>
 <li>Créer un motif simple</li>
 </ol>
-<h3 id="problemes-courants">Problèmes courants<a class="headerlink" href="#problemes-courants" title="Permanent link">&para;</a></h3>
+<h3 id="problemes-courants">Problèmes courants</h3>
 <table>
 <thead>
 <tr>
@@ -1216,7 +1484,7 @@ make<span class="w"> </span>-j<span class="k">$(</span>sysctl<span class="w"> </
 </tr>
 </tbody>
 </table>
-<h2 id="prochaines-etapes">Prochaines étapes<a class="headerlink" href="#prochaines-etapes" title="Permanent link">&para;</a></h2>
+<h2 id="prochaines-etapes">Prochaines étapes</h2>
 <ul>
 <li><a href="../guide_utilisateur/utilisation/interface/">Guide utilisateur complet</a></li>
 <li><a href="../guide_utilisateur/utilisation/modes/">Documentation des motifs</a></li>
@@ -1242,6 +1510,12 @@ make<span class="w"> </span>-j<span class="k">$(</span>sysctl<span class="w"> </
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
       </main>
       
         <footer class="md-footer">
@@ -1258,21 +1532,6 @@ make<span class="w"> </span>-j<span class="k">$(</span>sysctl<span class="w"> </
   
 </div>
       
-        <div class="md-social">
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://github.com/votre-repo" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
-    </a>
-  
-</div>
-      
     </div>
   </div>
 </footer>
@@ -1283,7 +1542,7 @@ make<span class="w"> </span>-j<span class="k">$(</span>sysctl<span class="w"> </
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.highlight"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
