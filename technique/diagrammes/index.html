@@ -624,54 +624,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Diagramme de Classes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#classes-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Classes principales
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diagramme-de-sequence" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagramme de séquence
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Diagramme de séquence">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#flux-principal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Flux principal
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diagramme-dactivite" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagramme d'Activité
-    </span>
-  </a>
-  
 </li>
       
         <li class="md-nav__item">
@@ -999,54 +951,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Diagramme de Classes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#classes-principales" class="md-nav__link">
-    <span class="md-ellipsis">
-      Classes principales
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diagramme-de-sequence" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagramme de séquence
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Diagramme de séquence">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#flux-principal" class="md-nav__link">
-    <span class="md-ellipsis">
-      Flux principal
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#diagramme-dactivite" class="md-nav__link">
-    <span class="md-ellipsis">
-      Diagramme d'Activité
-    </span>
-  </a>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1135,27 +1039,194 @@
 
 <h1 id="diagrammes-techniques">Diagrammes Techniques</h1>
 <h2 id="diagramme-de-classes">Diagramme de Classes</h2>
-<p><img alt="Diagramme de classes" src="../assets/images/class_diagram.png" /></p>
-<h3 id="classes-principales">Classes principales</h3>
-<ul>
-<li><strong>Grid</strong> : Gestion de la grille de jeu</li>
-<li><strong>Cell</strong> : Représentation d'une cellule</li>
-<li><strong>Game</strong> : Moteur du jeu</li>
-<li><strong>Renderer</strong> : Interface d'affichage</li>
-<li>ConsoleRenderer</li>
-<li>SFMLRenderer</li>
-</ul>
-<h2 id="diagramme-de-sequence">Diagramme de séquence</h2>
-<p><img alt="Diagramme de séquence" src="../assets/images/sequence_diagram.png" /></p>
-<h3 id="flux-principal">Flux principal</h3>
-<ol>
-<li>Initialisation du jeu</li>
-<li>Boucle de simulation</li>
-<li>Mise à jour de l'affichage</li>
-<li>Gestion des événements</li>
-</ol>
-<h2 id="diagramme-dactivite">Diagramme d'Activité</h2>
-<pre class="mermaid"><code>stateDiagram-v2
+<pre class="mermaid"><code>classDiagram
+    class Game {
+        - Config config
+        - Grid *grid
+        - IRenderer *renderer
+        - IEvolutionStrategy *evolutionStrategy
+        - int iterationDelay
+        - int numberOfIterations
+        + Game()
+        + void run()
+        + void setup()
+        + setters()
+        + getters()
+        + ~Game()
+    }
+
+    class Grid {
+        - std::vector&lt;std::vector&lt;Cell&gt;&gt; cells
+        - int width
+        - int height
+        - bool isToroidal
+        + Grid(int width, int height)
+        + void initCells(const std::vector&lt;std::vector&lt;int&gt;&gt; &amp;tab)
+        + void initCellsRandom()
+        + bool calculateNextGen(IEvolutionStrategy *evolutionStrategy)
+        + int countLiveNeighbors(int x, int y)
+        + void printCells() const
+        + bool isGridStable(const std::vector&lt;std::vector&lt;CellType&gt;&gt;&amp; nextGen) const
+        + getters()
+        + setters()
+        + ~Grid()
+    }
+
+    class Cell {
+        - CellType type
+        + Cell()
+        + Cell(CellType type)
+        + CellType getType() const
+        + void setType(CellType newType)
+        + ~Cell()
+    }
+
+    class CellType {
+        &lt;&lt;enumeration&gt;&gt;
+        Alive
+        Dead
+        Obstacle
+    }
+
+    class Config {
+        - map&lt;inputType, string&gt; questions
+        - map&lt;inputType, vector&lt;string&gt;&gt; validResponses
+        - unique_ptr&lt;InputHandler&gt; inputHandler
+        + Config()
+        + void setup(Game* game)
+        + T getInput(inputType type, const T&amp; defaultValue)
+        + string inputLoadChoice()
+        + string inputFilename()
+        + GridData inputGridData()
+        + bool inputGridToroidal()
+        + string inputEvolutionStrategy()
+        + string inputRenderer()
+        + int inputIterationNumber()
+        + int inputIterationDelay()
+        + ~Config()
+    }
+
+    class InputHandler {
+        + ~InputHandler()
+        + template&lt;T&gt; T handleInput(const string&amp; question, const T&amp; defaultValue, vector&lt;T&gt; validResponses, inputType inputType)
+    }
+
+    class IEvolutionStrategy {
+        + bool evolve(Cell* cell, int liveNeighbors) const = 0
+        + string getName() const = 0
+        + ~IEvolutionStrategy() = default
+    }
+
+    class ClassicEvolution {
+        - string name = "Classic"
+        + ClassicEvolution()
+        + bool evolve(Cell* cell, int liveNeighbors) const override
+        + string getName() const override
+        + ~ClassicEvolution() override
+    }
+
+    class HighLifeEvolution {
+        - string name = "High Life"
+        + HighLifeEvolution()
+        + bool evolve(Cell* cell, int liveNeighbors) const override
+        + string getName() const override
+        + ~HighLifeEvolution() override
+    }
+
+    class Subject {
+        - std::vector&lt;std::shared_ptr&lt;Observer&gt;&gt; observers
+        + void attach(std::shared_ptr&lt;Observer&gt; observer)
+        + void detach(std::shared_ptr&lt;Observer&gt; observer)
+        + void notify()
+        + ~Subject()
+    }
+
+    class Observer {
+        + void update(Subject* subject) = 0
+        + ~Observer()
+    }
+
+    class IRenderer {
+        + void render(Grid* grid)
+        + string getName() const
+        + void update(Subject *subject)
+        + ~IRenderer()
+    }
+
+    class ConsoleRenderer {
+        + ConsoleRenderer()
+        + void render(Grid* grid) override
+        + string getName() const override
+        + ~ConsoleRenderer() override
+    }
+
+    class GraphicRenderer {
+        - sf::RenderWindow window
+        - sf::Font font
+        - std::vector&lt;sf::Text&gt; configTexts
+        - sf::Text inputText
+        - std::string currentInput
+        - bool waitingForInput
+        + GraphicRenderer()
+        + void render(Grid* grid) override
+        + sf::RenderWindow&amp; getWindow()
+        + string getName() const override
+        + ~GraphicRenderer() override
+    }
+
+    class FileHandler {
+        + FileHandler()
+        + GridDimensions loadDimensions(string filename)
+        + vector&lt;vector&lt;int&gt;&gt; loadInputFromFile(string filename)
+        + void saveGridToFile(Grid* grid)
+        + void update(Subject* subject) override
+        + ~FileHandler()
+    }
+
+    IRenderer &lt;|-- GraphicRenderer  : inherits
+    IRenderer &lt;|-- ConsoleRenderer : inherits
+
+    IEvolutionStrategy &lt;|-- ClassicEvolution : inherits
+    IEvolutionStrategy &lt;|-- HighLifeEvolution : inherits
+
+    Game --&gt; Grid : uses
+    Game --&gt; IRenderer : uses
+    Game --&gt; IEvolutionStrategy : uses
+    Game --&gt; FileHandler : uses
+    Game --&gt; Config : uses
+
+    Config --&gt; InputHandler : uses
+
+    Grid --&gt; Cell : uses
+
+    Cell --&gt; CellType : uses
+
+    Subject  &lt;|-- Game : inherits
+    Observer &lt;|-- IRenderer : inherits
+    Observer &lt;|-- FileHandler : inherits
+
+
+### Classes principales
+- **Grid** : Gestion de la grille de jeu
+- **Cell** : Représentation d'une cellule
+- **Game** : Moteur du jeu
+- **Renderer** : Interface d'affichage
+  - ConsoleRenderer
+  - SFMLRenderer
+
+## Diagramme de séquence
+![Diagramme de séquence](../assets/images/sequence_diagram.png)
+
+### Flux principal
+1. Initialisation du jeu
+2. Boucle de simulation
+3. Mise à jour de l'affichage
+4. Gestion des événements
+
+## Diagramme d'Activité
+
+```mermaid
+stateDiagram-v2
     [*] --&gt; Initialisation
     Initialisation --&gt; BoucleJeu
 
